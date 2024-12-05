@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"pnpm --filter frontend dev\" \"go run ./apps/backend/main.go\""
+    "start": "concurrently \"npm run dev --prefix apps/frontend\" \"(cd apps/backend && go run main.go)\""
   },
   "author": "",
   "license": "ISC",
